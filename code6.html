@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>ThaiCreate.Com jQuery Tutorials</title>
+<style type="text/css"> 
+	.css1 {
+		font-size: 11px;
+		font-weight: bold;
+		color: #000000;
+	}
+	.css2 {
+		font-size: 20;
+		font-weight: bold;
+		color: #FF0000;
+	}
+</style>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+  $("#btnRemoveCss").click(function(){
+    $(".css2").removeClass();
+  });
+
+  $("#btnAddCss").click(function(){
+    $(".css1").addClass("css2");
+  });
+
+});
+</script>
+</head>
+<body>
+
+<p class="css1"> Welcome to jQuery on ThaiCreate.Com Tutorials</p>
+<p class="css2"> Version 2011</p>
+
+<input id="btnRemoveCss" type="button" value="Remove Css">
+<input id="btnAddCss" type="button" value="Add Css">
+</body>
+</html>

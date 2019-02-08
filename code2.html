@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>ThaiCreate.Com jQuery Tutorials</title>
+
+<style type="text/css"> 
+	.css1 {
+		font-size: 11px;
+		font-weight: bold;
+		color: #000000;
+	}
+	.css2 {
+		font-size: 20;
+		font-weight: bold;
+		color: #FF0000;
+	}
+</style>
+
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+	/*** btnHide Event ***/
+  $("#btnHide").click(function(){
+    $("p").hide();
+  });
+	/** btnShow Event ***/
+  $("#btnShow").click(function(){
+    $("p").show();
+  });
+
+
+
+	/*** btnHideCss1 Event ***/
+  $("#btnHideCss1").click(function(){
+    $(".css1").hide();
+  });
+	/*** btnShowCss1 Event ***/
+  $("#btnShowCss1").click(function(){
+    $(".css1").show();
+  });
+
+
+
+	/*** btnCss1 Event ***/
+  $("#btnCss1").click(function(){
+	$("#mytext").removeClass();
+    $("#mytext").addClass("css1");
+  });
+	/*** btnCss2 Event ***/
+  $("#btnCss2").click(function(){
+	$("#mytext").removeClass();
+    $("#mytext").addClass("css2");
+  });
+
+
+});
+</script>
+</head>
+
+<body>
+
+	<p>My Name is Win</p>
+	<input name="btnHide" id="btnHide" type="button" value="Hide">
+	<input name="btnShow" id="btnShow" type="button" value="Show">
+	<hr>
+
+	<div class="css1"> My Name is  Win</div><br>
+	<div class="css1"> My Name is  Weerachai</div>
+	<input name="btnHideCss1" id="btnHideCss1" type="button" value="Hide Css1">
+	<input name="btnShowCss1" id="btnShowCss1" type="button" value="Show Css1">
+	<hr>
+	
+	<span id="mytext"> My Name is  Win</span>
+	<input name="btnCss1" id="btnCss1" type="button" value="Change to Css1">
+	<input name="btnCss2" id="btnCss2" type="button" value="Change to Css2">
+
+</body>
+</html>

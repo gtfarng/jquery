@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>ThaiCreate.Com jQuery Tutorials</title>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$("#btn1").click(function(){
+		$("#div1").slideUp();
+	});
+
+	$("#btn2").click(function(){
+		$("#div1").slideDown();
+	});
+
+	$("#btn3").click(function(){
+		$("#div1").slideToggle();
+	});
+
+});
+</script>
+</head>
+<body>
+<div id="div1">www.ThaiCreate.Com <br />www.ThaiCreate.Com <br />www.ThaiCreate.Com <br />www.ThaiCreate.Com <br /></div>
+<input type="button" id="btn1" value="Up">
+<input type="button" id="btn2" value="Down">
+<input type="button" id="btn3" value="Toggle">
+</body>
+</html>

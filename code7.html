@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>ThaiCreate.Com jQuery Tutorials</title>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+  $("#btnHide").click(function(){
+	$("p#p1").hide();
+  });
+
+  $("#btnShow").click(function(){
+	$("p#p1").show();
+  });
+
+});
+</script>
+</head>
+<body>
+
+<p id="p1">string paragraph string paragraph string paragraph</p>
+<p>string div string div string div</p>
+
+<input type="button" id="btnHide" value="Hide">
+<input type="button" id="btnShow" value="Show">
+</body>
+</html>

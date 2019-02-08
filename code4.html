@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>ThaiCreate.Com jQuery Tutorials</title>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+  $("#btnText").click(function(){
+	$("#txt1").val($("#btnText").val());
+  });
+
+  $("#btnClear").click(function(){
+	$("#txt1").val('');
+  });
+
+});
+</script>
+</head>
+<body>
+
+<input type="text" id="txt1">
+
+<input type="button" id="btnText" value="input text = 123 ">
+<input type="button" id="btnClear" value="Clear">
+</body>
+</html>
